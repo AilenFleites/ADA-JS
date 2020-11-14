@@ -74,9 +74,9 @@ const array2 = [
 // splice:El método splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.//
 // const borrar = array2.splice(0, 3);
 
-// const reemplazar = array2.splice(1, 2, { name: "Lionel", lastname: "Messi" });
-// console.log(reemplazar);
-// console.log(array2);
+ const reemplazar = array2.splice(1, 2, { name: "Lionel", lastname: "Messi" });
+ console.log(reemplazar);
+ console.log(array2);
 
 // indexOf: El método indexOf() retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.
 
