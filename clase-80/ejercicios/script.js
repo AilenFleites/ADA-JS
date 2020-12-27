@@ -88,18 +88,26 @@ const adivinanza = () =>{
 
 const sumaBotones = () =>{
 let sumaTotal = 0;
-const valores = [-1,+1,-5,+5,-10,+10];
+const botones = [
+    { text : "-1", valor: -1},
+    { text : "+1", valor: 1},
+    { text : "-5", valor: -5},
+    { text : "+5", valor: 5},
+    { text : "-10", valor: -10},
+    { text : "+10", valor: 10},
+];
 const text = document.createElement("h3");
-text.innerHTML = (sumaTotal);
 document.body.appendChild(text);
-for (const valor of valores) {
+for (const boton of botones) {
     const btn = document.createElement("button");
-    btn.innerHTML = (valor);
+    btn.innerHTML = (boton.text);
     document.body.appendChild(btn);
     btn.addEventListener("click",()=>{
-    sumaTotal = sumaTotal + valor;
+    sumaTotal = sumaTotal + boton.valor;
+    text.innerHTML = ("calculo = " + sumaTotal);
     })
 }
 
 }
 sumaBotones();
+
