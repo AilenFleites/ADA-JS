@@ -109,5 +109,5 @@ for (const boton of botones) {
 }
 
 }
-sumaBotones();
+//sumaBotones();
 
